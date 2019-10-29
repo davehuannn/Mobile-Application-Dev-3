@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewController" customModule="Practical_3" customModuleProvider="target">
+            <connections>
+                <outlet property="myLabel" destination="hey-Vz-5O1" id="8E8-Jm-QCR"/>
+                <outlet property="view" destination="iN0-l3-epB" id="NxF-1W-jBg"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hey-Vz-5O1">
+                    <rect key="frame" x="100" y="174" width="214" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Jt-s7-SWd">
+                    <rect key="frame" x="100" y="94" width="214" height="30"/>
+                    <state key="normal" title="Click Me !"/>
+                    <connections>
+                        <action selector="onClick:" destination="-1" eventType="touchUpInside" id="05S-Zh-bcQ"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="hey-Vz-5O1" secondAttribute="trailing" constant="100" id="7gb-4i-T4w"/>
+                <constraint firstItem="hey-Vz-5O1" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="100" id="8Cr-dd-msr"/>
+                <constraint firstItem="5Jt-s7-SWd" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="50" id="HxK-zx-XEB"/>
+                <constraint firstItem="5Jt-s7-SWd" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="100" id="SXI-pF-E7R"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="5Jt-s7-SWd" secondAttribute="trailing" constant="100" id="Zro-YG-v0l"/>
+                <constraint firstItem="hey-Vz-5O1" firstAttribute="top" secondItem="5Jt-s7-SWd" secondAttribute="bottom" constant="50" id="j6F-g8-1bl"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="142" y="151"/>
+        </view>
+    </objects>
+</document>

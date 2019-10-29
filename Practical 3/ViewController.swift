@@ -9,12 +9,20 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    @IBAction func onClick(_ sender: AnyObject) {
+        myLabel.text = "I'm Clicked !"
+    }
 
+    
+    @IBOutlet weak var myLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
 
 
+    
 }
 
