@@ -10,6 +10,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewController" customModule="Practical_3" customModuleProvider="target">
             <connections>
                 <outlet property="myLabel" destination="hey-Vz-5O1" id="8E8-Jm-QCR"/>
+                <outlet property="txtField" destination="GMW-DK-U75" id="ZgE-YJ-TWM"/>
                 <outlet property="view" destination="iN0-l3-epB" id="NxF-1W-jBg"/>
             </connections>
         </placeholder>
@@ -31,15 +32,24 @@
                         <action selector="onClick:" destination="-1" eventType="touchUpInside" id="05S-Zh-bcQ"/>
                     </connections>
                 </button>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GMW-DK-U75">
+                    <rect key="frame" x="159" y="245" width="96" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="GMW-DK-U75" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="159" id="5hh-7q-GYT"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="hey-Vz-5O1" secondAttribute="trailing" constant="100" id="7gb-4i-T4w"/>
                 <constraint firstItem="hey-Vz-5O1" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="100" id="8Cr-dd-msr"/>
                 <constraint firstItem="5Jt-s7-SWd" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="50" id="HxK-zx-XEB"/>
+                <constraint firstItem="GMW-DK-U75" firstAttribute="top" secondItem="hey-Vz-5O1" secondAttribute="bottom" constant="50" id="RoS-Z9-4Df"/>
                 <constraint firstItem="5Jt-s7-SWd" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="100" id="SXI-pF-E7R"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="5Jt-s7-SWd" secondAttribute="trailing" constant="100" id="Zro-YG-v0l"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="GMW-DK-U75" secondAttribute="trailing" constant="159" id="aOq-ja-Q8I"/>
                 <constraint firstItem="hey-Vz-5O1" firstAttribute="top" secondItem="5Jt-s7-SWd" secondAttribute="bottom" constant="50" id="j6F-g8-1bl"/>
+                <constraint firstItem="GMW-DK-U75" firstAttribute="top" secondItem="hey-Vz-5O1" secondAttribute="bottom" constant="50" id="xMN-3l-uUd"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <point key="canvasLocation" x="142" y="151"/>

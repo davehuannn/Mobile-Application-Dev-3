@@ -24,7 +24,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         self.window = UIWindow(frame: windowScene.coordinateSpace.bounds)
         window?.windowScene = windowScene
         
-        let viewController = ViewController(nibName: "ViewController", bundle: nil)
+        let viewController = ViewController(nibName: "SecondViewController", bundle: nil)
         self.window?.rootViewController = viewController
         self.window?.makeKeyAndVisible()
     }

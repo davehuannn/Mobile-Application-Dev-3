@@ -8,21 +8,28 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
     
     @IBAction func onClick(_ sender: AnyObject) {
-        myLabel.text = "I'm Clicked !"
+        textFieldShouldReturn(textField: txtField)
     }
 
-    
     @IBOutlet weak var myLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        txtField.delegate = self
     }
 
 
+    @IBOutlet weak var txtField: UITextField!
     
+    func textFieldShouldReturn( textField: UITextField) -> Bool {
+        txtField.resignFirstResponder()
+        myLabel.text = textField.text
+        return true
+    }
 }
 
